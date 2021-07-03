@@ -1,0 +1,116 @@
+html {
+    background-image: url('../Pic-using/Home-bg\(3\).jpg');
+     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow:inset 0 0 0 2000px rgba(224, 224, 224, 0.19);
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* NavBar */
+.nav {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.nav-header {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 5px;
+}
+ .nav-header .header-list-group{
+    padding: 0.5rem;
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+    font-weight: 100;
+}
+.nav-header .header-list-group:hover {
+     font-weight: bolder;
+     background-color: rgba(255, 255, 255, 0.5);
+     border-color: rgba(255, 255, 255, 0.15);
+     border-radius: 8px;
+}
+/* Main */
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #333;
+    font-size: 4.5rem;
+    font-weight: 600;
+    position: relative;
+    top: 10px;
+}
+p {
+  font-size: 2.5rem;
+  font-weight: 300;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #555;
+  margin-right: 26%;
+}
+.btn {
+   margin-right: 50%; 
+   color: #333;
+   text-decoration: none;
+   font-size: 2rem;
+   font-weight: 200;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* Btn:hover */
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.19);
+    padding: 5px;
+    border-radius: 8px;
+    backdrop-filter: blur(3px);
+}
+
+/* Social Media */
+.main-links {
+    display: flex;
+    flex-direction: row;
+}
+.main-links {
+    list-style: none;
+}
+.main-links .list-group-item {
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+    font-weight: 100;
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 0.5rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Media Queries */
+@media all and (min-width: 505px) and (max-width: 767px) {
+    .title {
+        font-size: 4.0rem;
+    }
+    p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.3rem;
+    }
+    .main-links {
+        position: relative;
+        top: 65px;
+    }
+    .btn {
+        position: relative;
+        top: 25px;
+    }
+}
